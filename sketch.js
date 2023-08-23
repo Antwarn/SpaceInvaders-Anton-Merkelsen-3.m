@@ -1,8 +1,10 @@
 let alien0;
 let alien1;
+let ship1;
 function preload() {
   alien0 = loadImage('alien0.png');
-  alien1 = loadImage('alien1.png')
+  alien1 = loadImage('alien1.png');
+  ship1 = loadImage('ship.png');
 }
 
 function setup() {
@@ -14,7 +16,18 @@ function setup() {
 function draw() {
   background(0);
   alien.draw();
-  Invader.display();
+  ship.draw();
+}
+
+class ship{
+  constructor(x,y) {
+    this.x = y;
+    this.y = y;
+  }
+
+  draw() {
+    image(ship1, this.x, 200, 40, 40)
+  }
 }
 
 class alien{
@@ -28,10 +41,4 @@ class alien{
   }
 }
 
-class ship{
-  constructor(x,y) {
-    this.x = x;
-    this.y = y;
-  }
-}
 
