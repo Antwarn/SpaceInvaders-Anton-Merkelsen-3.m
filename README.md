@@ -13,7 +13,7 @@ Det gjorde jeg så ledes:
 
 ```js
 class Player {
-  constructor() { // I constructoren angiver jeg alle de parametre i nogele variabler som kan refereres til senere i koden
+  constructor() { // I Constructoren har jeg tilføjet alle de variabler playern skal bruge
     this.width = 40;
     this.height = 20;
     this.x = width / 2 - this.width;
@@ -44,13 +44,18 @@ Hvis spilleren brede er størrer end, eller lig med 0 betyder det at man er ved 
 bevæge sig videre. 
 
 ```js
-move() {
     if (keyIsDown(LEFT_ARROW) && this.x >= 0 ) {
       this.x -= this.speed;
     }
+```
+
+Hvis man bevæger sig imod højre spøger den om knappen "Right_arrow" er trykker. Den spøger også om reden af spilleren
+er mindre eller lig med breden af canvas minus breden af spillern. Hvis den er mindre eller lig med kan man ikke fortsætte
+længer imod højre. 
+Grunden til at den støger efter breden af canvas minus spiller breden, er fordi spillerens 0-punkt er helt til venstre. 
+``` js
     if (keyIsDown(RIGHT_ARROW)) && this.width <= width - this.width {
       this.x += this.speed;
     }
-  }
 ```
 </details>

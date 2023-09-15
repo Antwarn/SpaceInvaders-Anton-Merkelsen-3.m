@@ -13,8 +13,7 @@ function draw() { // Kalder de metoder der skal bruges for at vise og bevæge mi
 }
 
 class Player {
-  constructor() { // I constructoren angiver jeg alle de parametre i nogele variabler som kan refereres til senere i koden
-    this.width = 40;
+  constructor() { // I Constructoren har jeg tilføjet alle de variabler playern skal bruge
     this.height = 20;
     this.x = width / 2 - this.width;
     this.y = height - 50;
