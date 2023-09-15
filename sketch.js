@@ -1,43 +1,38 @@
-let alien0;
-let alien1;
-let ship1;
-function preload() {
-  alien0 = loadImage('alien0.png');
-  alien1 = loadImage('alien1.png');
-  ship1 = loadImage('ship.png');
-}
+let player;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(400, 400);
+  player = new Player(); // 
+}
+
+
+function draw() { // Kalder de metoder der skal bruges for at vise og bevæge mit rumskib
   background(0);
-  alien = new alien(200,300);
+  player.show();
+  player.move();
 }
 
-function draw() {
-  background(0);
-  alien.draw();
-  ship.draw();
-}
-
-class ship{
-  constructor(x,y) {
-    this.x = y;
-    this.y = y;
+class Player {
+  constructor() { // I constructoren angiver jeg alle de parametre i nogele variabler som kan refereres til senere i koden
+    this.width = 40;
+    this.height = 20;
+    this.x = width / 2 - this.width;
+    this.y = height - 50;
+    this.speed = 5;
   }
 
-  draw() {
-    image(ship1, this.x, 200, 40, 40)
-  }
-}
-
-class alien{
-  constructor(x,y) {
-    this.x = x;
-    this.y = y;
+  show() {
+    fill(220)
+    rect(this.x, this.y, this.width, this.height)
   }
 
-  draw() {
-    image(alien0, this.x, this.y, 40, 40)
+  move() {
+    if (keyIsDown(LEFT_ARROW) && this.x > 0 ) {
+      this.x -= this.speed;
+    }
+    if (keyIsDown(RIGHT_ARROW) && this.x < width - this.width) {
+      this.x += this.speed;
+    }
   }
 }
 
