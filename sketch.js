@@ -27,10 +27,11 @@ class Player {
   }
 
   move() {
-    if (keyIsDown(LEFT_ARROW) && this.x > 0 ) {
+    if (keyIsDown(LEFT_ARROW) && this.x >= 0 ) {
+      // Tjekker om spillern bevæger sig mod venstre og ikke ud af skærmen
       this.x -= this.speed;
     }
-    if (keyIsDown(RIGHT_ARROW) && this.x < width - this.width) {
+    if (keyIsDown(RIGHT_ARROW) && this.x <= width - this.width) {
       this.x += this.speed;
     }
   }
