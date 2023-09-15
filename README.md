@@ -5,6 +5,9 @@ Opgave pogramer spaceinvaders i p5.js og objekt orienteret programmering
 
 <details>
 <Summary> Player constructor og movement </summary>
+
+###Player constructor og movement
+
 Jeg startede med og lave sn spiller, få den tegnet på min skærm og give den en måde og begvæge sig på. 
 Det gjorde jeg så ledes: 
 
