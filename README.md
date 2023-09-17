@@ -72,11 +72,5 @@ I testen af pogram har jeg spillet spillet 10 gange og skrevet alle fejl ned jeg
               og aliens. beugte derfor bare regtankler.
               *Aliens dræber ikke player hvis de kolidere.
 
-markup: 
-  *Skydne kolidere ikke på hele alien, man skal ramme i midten.
-  *Havede problemer med og loade billeder ind som lit rumskib, 
-  og aliens. beugte derfor bare regtankler.
-  *Aliens dræber ikke player hvis de kolidere.
-
 Men jeg kan konkludere med de test jeg har lavet af pogrammet, virker det, som det skal. Der forekommer bare nogle små fejl, som vil give spillet en helheds føelse hvis jeg havede tid til og fixe dem.
 </details>
