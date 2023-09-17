@@ -60,4 +60,8 @@ Grunden til at den støger efter breden af canvas minus spiller breden, er fordi
 ```
 </details>
 
+
+<details>
+<summary>Bullet class</summary>
+</details>
 PS. fungere ikke så godt som haveskovl
