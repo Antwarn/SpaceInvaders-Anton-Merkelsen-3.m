@@ -8,7 +8,7 @@ Opgave pogramer spaceinvaders i p5.js og objekt orienteret programmering
 
 ### Player constructor og movement
  
-Jeg startede med og lave sn spiller, få den tegnet på min skærm og give den en måde og begvæge sig på. 
+Jeg startede med og lave en spiller, få den tegnet på min skærm og give den en måde og begvæge sig på. 
 Det gjorde jeg så ledes: 
 
 ```js
@@ -62,6 +62,13 @@ Grunden til at den støger efter breden af canvas minus spiller breden, er fordi
 
 
 <details>
-<summary>Bullet class</summary>
+<summary>Test af program</summary>
+
+I testen af pogram har jeg spillet spillet 10 gange og skrevet alle fejl ned jeg kunne finde. 
+  *Skydne kolidere ikke på hele alien, man skal ramme i midten.
+  *Havede problemer med og loade billeder ind som lit rumskib, 
+  og aliens. beugte derfor bare regtankler.
+  *Aliens dræber ikke player hvis de kolidere.
+
+Men jeg kan konkludere med de test jeg har lavet af pogrammet, virker det, som det skal. Der forekommer bare nogle små fejl, som vil give spillet en helheds føelse hvis jeg havede tid til og fixe dem.
 </details>
-PS. fungere ikke så godt som haveskovl
