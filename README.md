@@ -65,6 +65,13 @@ Grunden til at den støger efter breden af canvas minus spiller breden, er fordi
 <summary>Test af program</summary>
 
 I testen af pogram har jeg spillet spillet 10 gange og skrevet alle fejl ned jeg kunne finde. 
+
+ Markup : * Fejl
+              * Skydne kolidere ikke på hele alien, man skal ramme i midten.
+              *Havede problemer med og loade billeder ind som lit rumskib, 
+              og aliens. beugte derfor bare regtankler.
+              *Aliens dræber ikke player hvis de kolidere.
+
 markup: 
   *Skydne kolidere ikke på hele alien, man skal ramme i midten.
   *Havede problemer med og loade billeder ind som lit rumskib, 
